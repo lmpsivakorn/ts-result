@@ -1,0 +1,14 @@
+{
+  "name": "result",
+  "version": "0.0.1",
+  "description": "A utility class for handling the result of an operation that may succeed or fail. Usage",
+  "main": "index.min.js",
+  "scripts": {
+    "test": "deno test src/mod_test.ts",
+    "build": "deno bundle src/mod.ts index.min.js",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "",
+  "keywords": [],
+  "license": "MIT"
+}
