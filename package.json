@@ -1,11 +1,14 @@
 {
-  "name": "result",
-  "version": "0.0.1",
+  "name": "@lmpsivakorn/ts_result",
+  "version": "0.0.5",
   "description": "A utility class for handling the result of an operation that may succeed or fail. Usage",
-  "main": "index.min.js",
+  "main": "dist/index.min.js",
+  "types": "types/mod.d.ts",
   "scripts": {
     "test": "deno test src/mod_test.ts",
     "build": "deno bundle src/mod.ts index.min.js",
+    "buildNpm": "npx -p typescript tsc src/*.ts --declaration --allowJs --emitDeclarationOnly --outDir types",
+    "publishNpm": "npm publish --access public",
     "prepublishOnly": "npm run build"
   },
   "author": "",
